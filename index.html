@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/abf2b8db91.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="node_modules/reset-css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/awesome/css/all.css">
   <link rel="stylesheet" href="var.css">
   <link rel="stylesheet" href="styles.css">
   <title>FinSweet</title>
@@ -21,19 +24,21 @@
   <div class="page-wrapper">
 
     <header class="header">
-      <div class="header-flex container">
-        <a href="index.html" class="header-logo">{FinSweet</a>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="navbar-logo">{FinSweet</a>
 
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-item"><a href="index.html">Home</a></li>
-            <li class="header-nav-item"><a href="">Blog</a></li>
-            <li class="header-nav-item"><a href="">About Us</a></li>
-            <li class="header-nav-item"><a href="">Contact us</a></li>
-          </ul>
-        </nav>
+          <nav class="navbar-nav">
+            <ul class="navbar-list">
+              <li class="navbar-list-item"><a href="index.html">Home</a></li>
+              <li class="navbar-list-item"><a href="">Blog</a></li>
+              <li class="navbar-list-item"><a href="">About Us</a></li>
+              <li class="navbar-list-item"><a href="">Contact us</a></li>
+            </ul>
+          </nav>
 
-        <button class="header-btn btn">Subscribe</button>
+          <button class="header-btn btn">Subscribe</button>
+        </div>
       </div>
     </header>
 
@@ -46,10 +51,48 @@
 
     <footer class="footer">
       <div class="container">
-        <p>footer</p>
+
+        <div class="navbar">
+          <a href="index.html" class="navbar-logo">{FinSweet</a>
+
+          <nav class="navbar-nav">
+            <ul class="navbar-list">
+              <li class="navbar-list-item"><a href="index.html">Home</a></li>
+              <li class="navbar-list-item"><a href="">Blog</a></li>
+              <li class="navbar-list-item"><a href="">About Us</a></li>
+              <li class="navbar-list-item"><a href="">Contact us</a></li>
+              <li class="navbar-list-item"><a href="">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <form class="form-subcribe">
+          <label class="form-subcribe-label" for="email">Subscribe to our news letter to get latest updates and
+            news</label>
+          <input class="form-subcribe-input" type="email" id="email" placeholder="Enter Your Email">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>Hello@finsweet.com 020 7993 2905</p>
+          </div>
+
+          <nav class="social-nav">
+            <ul>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
     </footer>
-  </div>
+
+  </div><!-- page-wrapper -->
 
 </body>
 
