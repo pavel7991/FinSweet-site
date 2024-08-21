@@ -13,8 +13,11 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 5rem;
 }
-
+section {
+  margin-bottom: var(--px128);
+}
 /* -------------------------------------- */
 /* ------------- typography ------------- */
 /* -------------------------------------- */
@@ -81,7 +84,34 @@ p {
 .btn:hover {
   background-color: var(--color-dark-yellow);
 }
-
+.caption {
+  font-size: var(--px16);
+  font-weight: 500;
+  line-height: var(--px20);
+  letter-spacing: 0.188rem;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+.caption strong {
+  font-weight: 600;
+}
+.author-row::before {
+  content: "By ";
+}
+.author-row {
+  color: var(--color-dark-grey);
+  font-size: var(--px14);
+  line-height: var(--px20);
+}
+.author-row .name {
+  color: var(--color-purple);
+}
+.author-row .name:hover {
+  text-decoration: underline;
+}
+.author-row time::before {
+  content: "l ";
+}
 /* -------------------------------------- */
 /* -------------   header   ------------- */
 /* -------------------------------------- */
@@ -92,6 +122,7 @@ p {
   width: 100%;
   background-color: var(--color-black);
   padding: var(--px12) 0;
+  z-index: 99;
 }
 .navbar {
   display: flex;
@@ -207,4 +238,94 @@ p {
 .social-nav ul li a:hover {
   color: #fff;
   transform: scale(1.6);
+}
+
+/* -------------------------------------- */
+/* ----------   main-banner   ----------- */
+/* -------------------------------------- */
+
+/* .main-banner {
+  
+  background-image: url(img/main-banner.png);
+  background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    )
+   ;
+} */
+.main-banner {
+  position: relative;
+  overflow: hidden;
+}
+.main-banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: radial-gradient(
+    30.56% 76.04% at 74.58% 0%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.main-banner-wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.main-banner-wrapp-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.main-banner-content {
+  width: 60%;
+  padding-top: var(--px128);
+  padding-bottom: var(--px192);
+  min-height: 720px;
+  position: relative;
+  z-index: 3;
+}
+.main-banner-content .caption {
+  color: #fff;
+}
+.main-banner-content .caption strong {
+  font-weight: 900;
+}
+.main-banner-content h1 {
+  color: #fff;
+  margin: var(--px24) 0;
+}
+
+.main-banner-content .author-row {
+  font-size: var(--px16);
+  line-height: var(--px28);
+  color: #fff;
+}
+.main-banner-content .author-row .name {
+  color: var(--color-yellow);
+}
+.main-banner-description {
+  color: #fff;
+  width: 78%;
+  margin: var(--px16) 0 var(--px48);
+  max-height: var(--px56);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
