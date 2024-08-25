@@ -1,4 +1,5 @@
 :root {
+  --px8: 0.5rem;
   --px12: 0.75rem;
   --px16: 1rem;
   --px18: 1.125rem;
@@ -7,10 +8,12 @@
   --px28: 1.75rem;
   --px32: 2rem;
   --px36: 2.25rem;
+  --px40: 2.5rem;
   --px48: 3rem;
   --px56: 3.5rem;
   --px64: 4rem;
   --px80: 5rem;
+  --px96: 6rem;
   --px128: 8rem;
   --px192: 12rem;
 
